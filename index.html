@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>行並べ替えくん</title>
+</head>
+
+<body>
+    <header>
+        <p>行並べ替えくん</p>
+    </header>
+    <div class="main-wrapper">
+        <div class="about">
+            <p>改行の入った文章を下の行から順番に出力します。</p>
+            <p>出力結果は下に表示されます。</p>
+        </div>
+        <div class="palce-holder">
+            <p>テキストを入れてください</p>
+            <textarea id="inputText"></textarea>
+        </div>
+        <p><button class="btn" onclick="reverseInputText()">並べ替え</button></p>
+        <div class="output">
+            <p>出力結果</p>
+        </div>
+        <div id="outputText"></div>
+
+
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
