@@ -1,12 +1,12 @@
-function reverseInputText() {
-    const inputText = document.getElementById("inputText").value;
-    const inputTextArray = inputText.split(/\n/);
-    const reverseArray = inputTextArray.reverse();
-    let tmp = '';
-    reverseArray.forEach((e) => {
-      tmp += '<p>' + e + '</p>';
-    })
-    document.getElementById('outputText').innerHTML = tmp;
-  }
-
-
+function punctuationConversion() {
+  const inputText = document.getElementById("inputText").value;
+  const inputTextArray = inputText.split(/\n/);
+  let outputText = "";
+  let tmp = "";
+  inputTextArray.forEach((e) => {
+    tmp = e.replace(/、/g, "，");
+    tmp = tmp.replace(/。/g, "．");
+    outputText += "<p>" + tmp + "</p>";
+  });
+  document.getElementById("outputText").innerHTML = outputText;
+}

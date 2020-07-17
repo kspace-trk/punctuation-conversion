@@ -167,7 +167,6 @@ select {
 body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  justify-content: center;
   color: #282828;
 }
 
@@ -177,9 +176,9 @@ header {
   height: 50px;
   width: 100%;
   background-color: #404040;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 header p {
@@ -189,7 +188,6 @@ header p {
 .main-wrapper {
   margin-top: 50px;
   text-align: center;
-  position: relative;
 }
 
 .about {
@@ -223,7 +221,13 @@ header p {
 }
 
 #outputText {
+  width: 100%;
   margin-top: 20px;
+  display: grid;
+  place-items: center;
+}
+#outputText p {
+  width: 80vw;
 }
 
 .output {
